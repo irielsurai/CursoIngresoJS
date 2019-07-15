@@ -8,12 +8,12 @@ function mostrar()
     edad = document.getElementById("edad").value;
     edoCivil = document.getElementById("estadoCivil").value;
     
-    if (edad >= 18)
+    if (edad < 18)
     {   
-        if (edoCivil == "Soltero")
-        {
+        if (edoCivil != "Soltero")
+         {
             alert ("Es muy pequeño para NO ser soltero.");
-        }
+         }
     }
 
 }//FIN DE LA FUNCIÓN
